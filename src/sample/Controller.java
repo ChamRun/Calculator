@@ -31,30 +31,26 @@ public class Controller {
 
     @FXML
     public void sin(){
-            screen.setText(String.valueOf(Math.sin(Integer.parseInt(screen.getText()))).substring(0, 13));
+            screen.setText(String.valueOf(Math.sin(Double.parseDouble(screen.getText()))).substring(0, 13));
             readyToReset = true;
-
     }
 
     @FXML
     public void cos(){
-        screen.setText(String.valueOf(Math.cos(Integer.parseInt(screen.getText()))).substring(0, 13));
+        screen.setText(String.valueOf(Math.cos(Double.parseDouble(screen.getText()))).substring(0, 13));
         readyToReset = true;
-
     }
 
     @FXML
     public void tan(){
-        screen.setText(String.valueOf(Math.tan(Integer.parseInt(screen.getText()))).substring(0, 13));
+        screen.setText(String.valueOf(Math.tan(Double.parseDouble(screen.getText()))).substring(0, 13));
         readyToReset = true;
-
     }
 
     @FXML
     public void cot(){
-        screen.setText(String.valueOf(1 / Math.tan(Integer.parseInt(screen.getText()))).substring(0, 13));
+        screen.setText(String.valueOf(1 / Math.tan(Double.parseDouble(screen.getText()))).substring(0, 13));
         readyToReset = true;
-
     }
 
     @FXML
@@ -88,11 +84,9 @@ public class Controller {
 
         if (screen.getText().equals("0"))
             screen.setText(number);
-        else
+        else if (screen.getText().length() < 26)
             screen.setText(screen.getText() + number);
-
     }
-
 
 
 }
