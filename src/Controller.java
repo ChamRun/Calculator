@@ -1,5 +1,3 @@
-package sample;
-
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -36,6 +34,12 @@ public class Controller {
             readyToReset = true;
     }
 
+
+    @FXML
+    public void onPic(Event mouseEvent){
+        System.out.println(mouseEvent);
+    }
+
     @FXML
     public void cos(){
         screen.setText(String.valueOf(Math.cos(Double.parseDouble(screen.getText()))).substring(0, 13));
@@ -57,11 +61,6 @@ public class Controller {
     @FXML
     public void clear(){
         screen.setText("0");
-    }
-
-    @FXML
-    public void onPic(Event mouseEvent){
-        System.out.println(mouseEvent);
     }
 
     @FXML

@@ -75,6 +75,7 @@
                   <Image url="@../../../../../AP/Projects/AP-FP/Pic/Map/0.jpg" />
                </image>
             </ImageView>
+            <Button layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#write" prefHeight="40.0" prefWidth="40.0" text="4" />
             </children>
         </AnchorPane>
     </children>
