@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
@@ -56,6 +57,11 @@ public class Controller {
     @FXML
     public void clear(){
         screen.setText("0");
+    }
+
+    @FXML
+    public void onPic(Event mouseEvent){
+        System.out.println(mouseEvent);
     }
 
     @FXML

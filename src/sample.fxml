@@ -33,6 +33,8 @@
 -->
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -43,7 +45,6 @@
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
                 <Button layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#write" prefHeight="40.0" prefWidth="40.0" text="1" />
-            <Button layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#write" prefHeight="40.0" prefWidth="40.0" text="4" />
             <Button layoutX="110.0" layoutY="70.0" mnemonicParsing="false" onAction="#write" prefHeight="40.0" prefWidth="40.0" text="3" />
             <Button layoutX="60.0" layoutY="70.0" mnemonicParsing="false" onAction="#write" prefHeight="40.0" prefWidth="40.0" text="2" />
             <Button layoutX="60.0" layoutY="120.0" mnemonicParsing="false" onAction="#write" prefHeight="40.0" prefWidth="40.0" text="5" />
@@ -69,6 +70,11 @@
             <Button layoutX="210.0" layoutY="220.0" mnemonicParsing="false" onAction="#cot" prefHeight="40.0" prefWidth="40.0" text="cot" />
             <Button layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#write" prefHeight="40.0" prefWidth="40.0" text="." />
             <Button layoutX="210.0" layoutY="20.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="40.0" text="C" />
+            <ImageView fitHeight="185.0" fitWidth="331.0" layoutX="80.0" layoutY="67.0" onMouseClicked="#onPic">
+               <image>
+                  <Image url="@../../../../../AP/Projects/AP-FP/Pic/Map/0.jpg" />
+               </image>
+            </ImageView>
             </children>
         </AnchorPane>
     </children>
